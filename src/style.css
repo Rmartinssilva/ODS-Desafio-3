@@ -17,15 +17,14 @@ section hr {
   width: 30px;
 }
 .cor_fundo {
-  background: #f7f7f7;
+  background: #fbd1d1;
 }
 /* --------  Header  -------- */
 header {
   height: 110px;
   width: 100%;
-  position: fixed;
   z-index: 10;
-  background: #ff0070;
+  background: linear-gradient(to top, #ff0070 0%, #ffff 100%);;
 }
 header #logo {
   position: absolute;
@@ -41,7 +40,7 @@ header #logo img{
 header .menu {
   float: right;
   list-style: none;
-  margin-top: 15px;
+  margin-top: 0px;
   margin-right: 5%;
 }
 header .menu li {
@@ -55,35 +54,34 @@ header .menu li a {
   color: #000;
 }
 header .menu li:hover {
-  background-color: #fbd1d1;
+  background-color: #ff0070;
 }
 /* --------  Capa  -------- */
 figure {
   margin: 0 auto;
 }
 figure .imagem_fundo {
-  background: url(); 
+  background: url(./imagens/fundo.png)no-repeat; 
   background-size: cover;
   height: 100%;
   padding: 10px;
 }
 figure .titulo {
-  color: #ff0070;
+  color: #f7f7f7;
   line-height: 0.9;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px #000;
 }
 figure h1.titulo {
   font-size: 70px;
   letter-spacing: -5px;
-  margin: 15% 20% 0 20%;
-  padding-bottom: 10px;
+  margin: 15% 15% 0 15%;
 }
 figure h2.titulo {
   padding-top: 20px;
   font-size: 20px;
   margin: 0 30% 0 30%;
-  border-top: 3px solid white;
-  padding-bottom: 20px;
+  border-top: 3px solid #ffff;
+  padding-bottom: 25px;
 }
 .cta {
   border: 1px solid #ff0070;
@@ -94,7 +92,7 @@ figure h2.titulo {
   font-size: 20px;
 }
 .cta:hover {
-  background-color: #01acea;
+  background-color: #fbd1d1;
   border: 0px;
 }
 /* --------  Colunas  -------- */
@@ -168,6 +166,7 @@ h3 {
 .justificado {
   text-align: justify;
 }
+
 /* --------  Footer  -------- */
 footer {
   background-color: #ff0070;
@@ -177,11 +176,9 @@ footer {
   padding: 30px 0 50px 0;
   color:  #fbd1d1;
 }
-
 footer .container {
   padding: 30px 0 50px 0;
 }
-
 .coluna.dois a{
   color: #ffff;
 }
@@ -196,8 +193,6 @@ footer .container {
     margin: 10px auto;
     float: none;
   }
- 
-  }
   header #logo {
     position: relative;
     width: 100%;
@@ -207,17 +202,18 @@ footer .container {
   .menu {
     visibility: hidden;
   }
+  footer .coluna.dois .esquerda, p{
+    text-align: center;
+  }
   figure h1.titulo {
     margin-top: 160px;
+    font-size: 60px;
   }
   figure h2.titulo {
     margin: 0 10% 0 10%;
+    font-size: 18px;
   }
-
-
-
-
- 
+}
 
 
 
